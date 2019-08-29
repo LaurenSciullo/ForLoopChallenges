@@ -1,12 +1,14 @@
+import java.util.Scanner;
 
 public class ForLoopChallenges
 	{
+
 
 		public static void main(String[] args)
 			{
 				//printDonutsLove();
 				//ascendingToDescending();
-				multiplesOfFive();
+				//multiplesOfFive();
 				//totalOfMultiples();
 				sumNumbersInRange();
 				drawRectangleAsterisks();
@@ -35,7 +37,7 @@ public class ForLoopChallenges
 					}
 			}
 
-		private static void multiplesOfFive()
+		public static int multiplesOfFive()
 			{
 				for (int i = 5; i<=100; i++ )
 					{
@@ -44,23 +46,45 @@ public class ForLoopChallenges
 								System.out.println(i);
 							}
 					}
+				return 0;
 			}
 
-//		private static void totalOfMultiples()
-//			{
-//				int sum = 0;
-//				for (int number)
-//					{
-//						sum+=number;
-//						System.out.println();
-//					}
-//				System.out.println("The sum is " + sum);
-//			}
+		public static int totalOfMultiples()
+			{
+				
+			int numbers = multiplesOfFive();
+				int sum = 0;
+				 
+							{
+								sum+=numbers;
+							}
+				System.out.println("The sum is " + sum);
+					
+				return 0;
+			}
 
 		private static void sumNumbersInRange()
 			{
+				System.out.println("Enter your lowerbound: ");
+				Scanner userInput = new Scanner(System.in);
+				int lowerBound = userInput.nextInt(); 
 				
+				System.out.println("Enter your upperbound: ");
+				int upperBound = userInput.nextInt();
 				
+				int q;
+				int w; 
+				for ( q = 1; q >= lowerBound; q++)
+					{
+						System.out.println(q);
+					}
+				for ( w = 1; w <= upperBound; w++)
+					{
+						System.out.println(w);
+					}
+				int sum = 0;
+				sum = q + w;
+				System.out.println("Your sum is: " + sum);
 			}
 
 		private static void drawRectangleAsterisks()
