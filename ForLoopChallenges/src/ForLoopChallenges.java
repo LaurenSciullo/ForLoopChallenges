@@ -8,9 +8,9 @@ public class ForLoopChallenges
 			{
 				//printDonutsLove();
 				//ascendingToDescending();
-				//multiplesOfFive();
-				//totalOfMultiples();
-				sumNumbersInRange();
+				multiplesOfFive(0);
+				totalOfMultiples();
+				//sumNumbersInRange();
 				drawRectangleAsterisks();
 				printUsingTens();
 
@@ -37,7 +37,7 @@ public class ForLoopChallenges
 					}
 			}
 
-		public static int multiplesOfFive()
+		public static int multiplesOfFive(int sum)
 			{
 				for (int i = 5; i<=100; i++ )
 					{
@@ -52,13 +52,13 @@ public class ForLoopChallenges
 		public static int totalOfMultiples()
 			{
 				
-			int numbers = multiplesOfFive();
+			//int numbers = multiplesOfFive();
 				int sum = 0;
 				 
-							{
-								sum+=numbers;
-							}
-				System.out.println("The sum is " + sum);
+							//{
+							//	sum+=numbers;
+							//}
+				System.out.println("The sum is " + multiplesOfFive(sum));
 					
 				return 0;
 			}
