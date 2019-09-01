@@ -8,9 +8,9 @@ public class ForLoopChallenges
 			{
 				//printDonutsLove();
 				//ascendingToDescending();
-				multiplesOfFive(0);
-				totalOfMultiples();
-				//sumNumbersInRange();
+				//multiplesOfFive();
+				//sumOfMultiples(0);
+				sumNumbersInRange();
 				drawRectangleAsterisks();
 				printUsingTens();
 
@@ -37,7 +37,7 @@ public class ForLoopChallenges
 					}
 			}
 
-		public static int multiplesOfFive(int sum)
+		public static int multiplesOfFive()
 			{
 				for (int i = 5; i<=100; i++ )
 					{
@@ -49,19 +49,18 @@ public class ForLoopChallenges
 				return 0;
 			}
 
-		public static int totalOfMultiples()
-			{
-				
-			//int numbers = multiplesOfFive();
-				int sum = 0;
-				 
-							//{
-							//	sum+=numbers;
-							//}
-				System.out.println("The sum is " + multiplesOfFive(sum));
-					
-				return 0;
-			}
+//		public static int sumOfMultiples(int numbers)
+//		{
+//			
+//				int sum = multiplesOfFive();
+//				 
+//					for (int i = numbers; i <= numbers; i++ )	
+//					{
+//				sum+=numbers;
+//					}
+//					System.out.println("The sum is: " + sum);
+//					return sum;
+//			}
 
 		private static void sumNumbersInRange()
 			{
@@ -72,19 +71,28 @@ public class ForLoopChallenges
 				System.out.println("Enter your upperbound: ");
 				int upperBound = userInput.nextInt();
 				
-				int q;
-				int w; 
-				for ( q = 1; q >= lowerBound; q++)
+//				int q;
+//				int w; 
+				for (int i = 1; i >= 0; i++)
 					{
-						System.out.println(q);
-					}
-				for ( w = 1; w <= upperBound; w++)
+					if (i >= lowerBound)
 					{
-						System.out.println(w);
+						System.out.println(i);
 					}
-				int sum = 0;
-				sum = q + w;
-				System.out.println("Your sum is: " + sum);
+					else if( i <= upperBound)
+					{
+						System.out.println(i);
+					}
+					}
+					
+					
+//				for ( int i = 1; i <= upperBound; i++)
+//					{
+//						System.out.println(i);
+//					}
+//				int sum = 0;
+//				sum = q + w;
+//				System.out.println("Your sum is: " + sum);
 			}
 
 		private static void drawRectangleAsterisks()
