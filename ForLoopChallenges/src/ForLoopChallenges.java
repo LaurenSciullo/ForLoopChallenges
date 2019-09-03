@@ -6,10 +6,10 @@ public class ForLoopChallenges
 
 		public static void main(String[] args)
 			{
-				//printDonutsLove();
-				//ascendingToDescending();
-				//multiplesOfFive();
-				//sumOfMultiples(0);
+				printDonutsLove();
+				ascendingToDescending();
+				multiplesOfFive();
+				sumOfMultiples();
 				sumNumbersInRange();
 				drawRectangleAsterisks();
 				printUsingTens();
@@ -33,11 +33,11 @@ public class ForLoopChallenges
 					}
 				for (int i = 5; i >=1; i--)
 					{
-						System.out.println("\nDescending: " + i);
+						System.out.println("Descending: " + i);
 					}
 			}
 
-		public static int multiplesOfFive()
+		public static void multiplesOfFive()
 			{
 				for (int i = 5; i<=100; i++ )
 					{
@@ -46,21 +46,21 @@ public class ForLoopChallenges
 								System.out.println(i);
 							}
 					}
-				return 0;
+			
 			}
 
-//		public static int sumOfMultiples(int numbers)
-//		{
-//			
-//				int sum = multiplesOfFive();
-//				 
-//					for (int i = numbers; i <= numbers; i++ )	
-//					{
-//				sum+=numbers;
-//					}
-//					System.out.println("The sum is: " + sum);
-//					return sum;
-//			}
+		public static void sumOfMultiples()
+		{
+			
+				int sum = 0;
+				 
+					for (int i = 5 ; i <= 100; i += 5 )	
+					{
+				sum += i;
+					}
+					System.out.println("The sum is: " + sum);
+					
+			}
 
 		private static void sumNumbersInRange()
 			{
@@ -70,40 +70,44 @@ public class ForLoopChallenges
 				
 				System.out.println("Enter your upperbound: ");
 				int upperBound = userInput.nextInt();
-				
-//				int q;
-//				int w; 
-				for (int i = 1; i >= 0; i++)
-					{
-					if (i >= lowerBound)
+					
+				for ( int i = lowerBound; i <= upperBound; i++)
 					{
 						System.out.println(i);
 					}
-					else if( i <= upperBound)
-					{
-						System.out.println(i);
-					}
-					}
-					
-					
-//				for ( int i = 1; i <= upperBound; i++)
-//					{
-//						System.out.println(i);
-//					}
-//				int sum = 0;
-//				sum = q + w;
-//				System.out.println("Your sum is: " + sum);
+				int sum = 0;
+				 
+				for (int i = lowerBound ; i <= upperBound; i++ )	
+				{
+			sum+=i;
+				}
+				System.out.println("Your sum is: " + sum);
 			}
 
 		private static void drawRectangleAsterisks()
 			{
 				
+			
+				System.out.println("*********");
 				
+				for (int i = 1; i <=9; i++)
+					{
+						System.out.println("*" + "       " + "*");
+					}
+			
+				System.out.println("*********");
 			}
 
 		private static void printUsingTens()
 			{
-				
+				for (int i = 9+1; i<=101-1; i++ )
+					{
+						
+						if (i%(9+1) == 0)
+							{
+								System.out.println(i);
+							}
+					}
 				
 			}
 
